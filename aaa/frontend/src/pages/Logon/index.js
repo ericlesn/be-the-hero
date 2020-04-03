@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import { Link,useHistory } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import {FiLogIn} from 'react-icons/fi'
 import api from '../../services/api';
 
@@ -38,6 +38,7 @@ export default function Logon(){
                 value={id}
                 onChange={e =>setId(e.target.value)}
                 />
+
                 <button className="button" type="submit">Entrar</button>
 
                 <Link className="back-link"to="/register">
